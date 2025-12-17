@@ -87,8 +87,7 @@ for col in df_ref.columns[12:]:
             all_values.extend(Data_values)
             all_labels.extend([f'{f} n={len(Data_values)}']*len(Data_values))
             palette_colors.append('lightgreen')  # couleur pour les UH
-
-    # Créer le DataFrame long
+          
     df_plot = pd.DataFrame({
         'Dose [Gy]': all_values,
         'Data': all_labels
@@ -124,3 +123,4 @@ for col in df_ref.columns[12:]:
     
 
     
+
