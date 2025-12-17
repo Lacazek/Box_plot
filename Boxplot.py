@@ -2,7 +2,7 @@
 """
 Created on Wed Nov 12 15:32:02 2025
 
-@author: 129391
+@author: lacazek
 """
 
 import pandas as pd
@@ -25,7 +25,7 @@ data_filter = {"TTT replan","0 UH","-100 UH", "-200 UH", "-300 UH", "-400 UH", "
                "-100 UH TTT", "-200 UH TTT", "-300 UH TTT", "-400 UH TTT", "-500 UH TTT", "-600 UH TTT", "-700 UH TTT"}
 dossier = "B:\\RADIOTHERAPIE\\Physique\\2-Projets en cours\\Bolus Virtuel VMAT\\Etude\\"
 paths = "Résultats OARS - UH choisies\\figures\\"
-dossier_name = "ALL_UH_seinG_KL"
+dossier_name = "ALL_UH_seinG"
 dossier = dossier +paths+dossier_name
 os.makedirs(dossier,exist_ok= True)
 
@@ -122,4 +122,5 @@ for col in df_ref.columns[12:]:
     plt.savefig(os.path.join(dossier, f"{col}_allUH.png"))
     plt.close()
     
+
     
